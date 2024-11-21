@@ -1,121 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 레이아웃 A-1</title>
-</head>
-<body>
-    <main>        
-            <nav>
-                <a href="#" id="logo">JUST
-                    <img src="" alt="">
-                </a>
-                <div id="menu">
-                    <div id="mainMenu">
-                        <a class="mainCategory" href="#">1</a>
-                        <a class="mainCategory" href="#">2</a>
-                        <a class="mainCategory" href="#">3</a>
-                        <a class="mainCategory" href="#">4</a>
-                    </div>
-                    <ul id="subMenu">
-                        <li class="subCategory">
-                            <a href="#">1-1</a> 
-                            <a href="#">1-2</a> 
-                            <a href="#">1-3</a> 
-                            <a href="#">1-4</a> 
-                        </li>
-                        <li class="subCategory">             
-                            <a href="#">2-1</a> 
-                            <a href="#">2-2</a> 
-                            <a href="#">2-3</a> 
-                            <a href="#">2-4</a> 
-                        </li>
-                        <li class="subCategory">            
-                            <a href="#">3-1</a> 
-                            <a href="#">3-2</a> 
-                            <a href="#">3-3</a> 
-                            <a href="#">3-4</a> 
-                        </li>
-                        <li class="subCategory">
-                            <a href="#">4-1</a> 
-                            <a href="#">4-2</a> 
-                            <a href="#">4-3</a> 
-                            <a href="#">4-4</a> 
+    <head>
+        <title>JUST쇼핑몰</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+         <main>
+        <!-- header -->
+            <header>
+                <nav>
+                    <a href="#"><img class="logo" src="img/logo.png"></a>
+                    <ul class="menu">
+                        <li class="cat"><a href="#">탑</a>
+                         <ul class="sub">
+                            <li class="sub_cat"><a href="#">블라우스</a></li>
+                            <li class="sub_cat"><a href="#">티</a></li>
+                            <li class="sub_cat"><a href="#">셔츠</a></li>
+                            <li class="sub_cat"><a href="#">니트</a></li>
+                         </ul>
+                         <li class="cat"><a href="#">아우터</a>
+                            <ul class="sub">
+                               <li class="sub_cat"><a href="#">자켓</a></li>
+                               <li class="sub_cat"><a href="#">점퍼</a></li>
+                               <li class="sub_cat"><a href="#">코트</a></li>
+                            </ul>
+                        <li class="cat"><a href="#">팬츠/스커트</a>
+                            <ul class="sub">
+                                <li class="sub_cat"><a href="#">긴바지</a></li>
+                                <li class="sub_cat"><a href="#">짧은바지</a></li>
+                                <li class="sub_cat"><a href="#">스커트</a></li>
+                                <li class="sub_cat"><a href="#">데님</a></li>
+                            </ul>
+                        <li class="cat"><a href="#">악세서리</a>
+                            <ul class="sub">
+                                <li class="sub_cat"><a href="#">귀고리</a></li>
+                                <li class="sub_cat"><a href="#">목걸이</a></li>
+                                <li class="sub_cat"><a href="#">반지</a></li>
+                                <li class="sub_cat"><a href="#">팔찌</a></li>
+                            </ul>
                         </li>
                     </ul>
-                </div>
-              
-            </nav>
-        </div>
-        <div id="silder">
-            <a href="#" class="slide">
-                <span class="slideText">쇼핑몰 홈페이지 새 단장</span>
-                <img src="slider/slider01.jpg" alt="쇼핑몰 홈페이지 새 단장">
-            </a> 
-            <a href="#" class="slide">
-                <span class="slideText">쇼핑몰 홈페이지 새 단장</span>
-                <img src="slider/slider02.jpg" alt="쇼핑몰 홈페이지 새 단장">
-            </a> 
-            <a href="#" class="slide">
-                <span class="slideText">쇼핑몰 홈페이지 새 단장</span>
-                <img src="slider/slider03.jpg" alt="쇼핑몰 홈페이지 새 단장">
-            </a> 
-        </div> 
-        <div id="contents">
-                <div id="tab">
-                    <div id="tabMenu">
-                        <a href="#" class="tabButton">공지사항</a>
-                        <div class="tabBorder"></div>
-                        <a href="#" class="tabButton">갤러리</a>
+                </nav>
+            </header>
+        <!-- slider -->
+            <div class="slide">
+                <ul class="slide_wrapper">
+                    <li class="s1"><a href="#">쇼핑몰 홈페이지 새단장</a></li>
+                    <li class="s2"><a href="#">이달의 쇼핑 이벤트</a></li>
+                    <li class="s3"><a href="#">장바구니 할인 이벤트</a></li>
+                </ul>
+            </div>
+        <!-- content -->
+            <div class="content">
+                <div class="tab_menu">
+                    <div class="tab">
+                        <h2 class="tab_button act_tab">게시판</h2>
+                        <h2 class="tab_button">갤러리</h2>
                     </div>
-                        <ul id="noticeList">
-                            <li>
-                                <a href="#" class="noticeItem">
-                                    신규회원 대상 할인 이벤트 안내
-                                    <span>2024.01.01</span>
-                                </a>
+                        <ul class="notice on">
+                            <li class="notice_item">
+                                <a class="item" href="#">신규회원 대상 할인 이벤트 안내<span>2020.11.23</span></a>
                             </li>
-                            <li>
-                                <a href="#" class="noticeItem">
-                                    신규회원 대상 할인 이벤트 안내
-                                    <span>2024.01.01</span>
-                                </a>
+                            <li class="notice_item">
+                                <a class="item"  href="#">S/S 시즌 신규 의류 신상품 안내<span>2020.11.23</span></a>
                             </li>
-                            <li>
-                                <a href="#" class="noticeItem">
-                                    신규회원 대상 할인 이벤트 안내
-                                    <span>2024.01.01</span>
-                                </a>
+                            <li class="notice_item">
+                                <a class="item"  href="#">반품/환불 규정에 대해 알려드립니다<span>2020.11.23</span></a>
+                            </li>   
+                            <li class="notice_item">
+                                <a class="item"  href="#">3월 재입고 품목을 알려드립니다	<span>2020.11.23</span></a>
                             </li>
-                            <li>
-                                <a href="#" class="noticeItem">
-                                    신규회원 대상 할인 이벤트 안내
-                                    <span>2024.01.01</span>
-                                </a>
-                            </li>
-                        </ul>                        
-    
-                    <div id="c2Content">
-
-                    </div>
+                        </ul>
+                        <ul class="gallary">
+                            <li class="gallary_item"><img src="img/icon1.jpg" alt="gallary_item1"></li>
+                            <li class="gallary_item"><img src="img/icon2.jpg" alt="gallary_item1"></li>
+                            <li class="gallary_item"><img src="img/icon3.jpg" alt="gallary_item1"></li>
+                        </ul>
                 </div>
+                <a class="c3" href="#"><img src="img/banner.jpg" alt="banner"></a>  
+                <div class="c4"><img src="img/direct.jpg" alt="direct"><button>바로가기</button></div>  
+            </div>
+        <!-- footer -->      
+            <footer>
+                <div>
+                <img src="img/footerLogo.png" alt="footer_logo">
+                </div>
+                <div class="footer_content">
+                <p>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</p>
+                    <ul>
+                        <li><a href="#">하단메뉴1</a></li>
+                        <li><a href="#">하단메뉴2</a></li>
+                        <li><a href="#">하단메뉴3</a></li>
+                    </ul>
+                </div>
+                <ul class="footer_sns">
+                    <li><a href="#"><img src="img/sns1.jpg" alt="sns1"></a></li>
+                    <li><a href="#"><img src="img/sns2.jpg" alt="sns2"></a></li>
+                    <li><a href="#"><img src="img/sns3.jpg" alt="sns3"></a></li>
+                </ul>
+            </footer>
+            <section class="popup">
+                <div class="popup_header">
 
-            <div class="contentBox"><a class="contentButton" href="#">배너</a><img src="slider/slider01.jpg"  alt="banner"></div> 
-            <div class="contentBox"><a class="contentButton" href="#">바로가기</a><img src="slider/slider02.jpg" alt="directLink"></div>
-        </div>   
-        <footer>
-            <a href="#" id="footerLogo">JUST
-                <img src="" alt="">
-            </a>
-            <span>copyright</span>
-            <div id="sns">
-                <a href="#" class="icon"><img src="facebook" alt="facebook"></a>
-                <a href="#" class="icon"><img src="twiter" alt="twiter"></a>
-                <a href="#" class="icon"><img src="instagram" alt="instagram"></a>
-            </d>
-        </footer>
-    </main>
-</body>
-</html> 
+                <h2>신규회원 대상 이벤트 안내</h2>
+                    <div class="popup_close_button">X</div>
+                </div>
+                <p>즐거운 쇼핑 환경을 위해 항상 노력하는 JUST 쇼핑몰입니다. 고객님들께 한 단계 더 나아가 보답하는 ON쇼핑몰이 되고자신규회원 대상 10% 할인 이벤트를 실시하고 있습니다. 웹과 모바일에서 모두 이용 가능하며, 수준 높은 서비스를 위해 앞으로도 꾸준히 노력할 것을 약속드립니다.</p>
+            </section> 
+         </main>
+
+    </body>
+</html>
